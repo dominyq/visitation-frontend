@@ -1,0 +1,37 @@
+body {
+    background: rgb(83,148,221);
+background: linear-gradient(90deg, rgba(83,148,221,1) 2%, rgba(85,192,217,1) 45%, rgba(149,231,231,1) 99%);
+}
+
+h1, h2, h3, a, h4, button {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: yellow;
+}
+
+#links {
+    margin: auto;
+}
+
+input[type=submit] {
+    background-color: #03adfc;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+  }
+input[type=submit]:hover {
+    background-color: yellow;
+  }
+form {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    border-style: outset;
+}
+
+#laukiantys {
+    text-align: center;
+}
+#kabinetas {
+    text-align: right;
+}
