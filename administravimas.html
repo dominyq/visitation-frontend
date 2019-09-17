@@ -1,42 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
     <title>Administravimas</title>
-  </head>
-  <body id="admin">
-<h2 id="admin"><font color="yellow">SVEIKI ATKYKĘ!</font></h2>
 
-<form>
-    Vardas:<br>
-    <input type="text" name="firstname"><br>
-    Pavardė:<br>
-    <input type="text" name="lastname"><br>
-    Specialistas:<br>
-    <input type="text" name="specialist">
-    <input type="submit" value="Prisijungti">
-  </form>
-<!-- <h4>Paspauskite reikiamą mygtuką:</h4> -->
-<!-- <div id="links"></div>
-  <a href="svieslente.html" target="blank">
-    Pinigų įnešimas į sąskaitas
-  </a>
-  <a href="svieslente.html" target="blank">
-    Paskola
-  </a>
-  <a href="svieslente.html" target="blank">
-    Čekių išgryninimas
-  </a>
-  <a href="svieslente.html" target="blank">
-    Pinigų pervedimas
-  </a>
-  <a href="svieslente.html" target="blank">
-    Kredito kortelės
-  </a>
-  <a href="svieslente.html" target="blank">
-    Internetinė bankininkystė
-  </a>
-</div> -->
+    <script>
+      const register = () => {
+        const person = {
+          name: document.getElementById("firstname").value,
+          lastname: document.getElementById("lastname").value,
+          specialist: document.getElementById("specialist").value,
+          number: 231
+        };
+          
+        window.localStorage.setItem('user', JSON.stringify(person));
+      };
+    </script>
+  </head>
+
+  <body id="admin">
+    <h2 id="admin"><font color="yellow">SVEIKI ATKYKĘ!</font></h2>
+
+    <form>
+      Vardas:<br />
+      <input type="text" id="firstname" /><br />
+      Pavardė:<br />
+      <input type="text" id="lastname" /><br />
+      Specialistas:<br />
+      <input type="text" id="specialist" />
+      <input type="submit" value="Prisijungti" onclick="register()"/>
+    </form>
   </body>
 </html>
